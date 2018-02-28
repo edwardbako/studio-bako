@@ -52,7 +52,11 @@ html, body {
 }
 
 .container {
-  margin: auto 15vw;
+  margin: auto 3vw;
+
+  @media(min-width: 490px) {
+    margin: auto 15vw;
+  }
 }
 
 .row, td, dd {
