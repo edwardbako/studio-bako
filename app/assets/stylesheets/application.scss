@@ -1,0 +1,78 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&subset=latin,latin-ext);
+@import url('https://fonts.googleapis.com/css?family=Crafty+Girls');
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand');
+@import url('https://fonts.googleapis.com/css?family=Marck+Script');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+@import 'font-awesome';
+
+@import 'jquery-ui';
+
+@import 'bootstrap-sprockets';
+@import 'bootstrap/variables';
+@import 'bootstrap';
+@import 'bootstrap/forms';
+@import 'bootstrap/navbar';
+@import 'bootstrap/jumbotron';
+
+//@import 'trix';
+
+@import 'modifiers';
+
+body {
+  //padding-top: 50px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  color: white;
+}
+
+#wrapper {
+  min-height: 100%;
+  background: image-url('bg/pexels-photo-281513.jpeg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+
+  #blur {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+  }
+}
+
+.container {
+  margin: auto 15vw;
+}
+
+.row, td, dd {
+  position: relative !important;
+}
+
+//.panel {
+//  border: none;
+//  box-shadow: rgba(0, 0, 0, 0.1) 0 0 14px 1px;
+//
+//}
+
+#notice {
+  position: absolute;
+  top: -30px;
+  width: 100%;
+  z-index: 10000;
+}
+
+a {
+  font-weight: bold;
+  transition: all 0.5s ease-out;
+}

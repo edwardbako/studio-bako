@@ -1,0 +1,102 @@
+[data-url] {
+  cursor: pointer;
+}
+
+.translation_missing {
+  color: lighten($brand-danger, 30%);
+}
+
+.gochi-font {
+  font-family: $font-family-gochi;
+}
+
+.white {
+  color: white;
+}
+
+.vertical-align-row {
+  display: flex;
+  align-items: center;
+}
+
+//.dropdown-hover:hover {
+//  .dropdown-menu {
+//    display: block;
+//  }
+//}
+
+.dl-stripped {
+  @media (min-width: 768px) {
+    dt {
+      width: 60px;
+      overflow: visible;
+      white-space: normal;
+    }
+
+    dd {
+      margin-left: 80px;
+      margin-bottom: 0.5em;
+    }
+  }
+}
+
+.btn-reverse {
+  color: white;
+  background: none;
+  transition: all 0.5s ease-out;
+  border-color: white;
+
+  &:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+}
+
+//.col-no-padding {
+//  padding: 0;
+//
+//}
+
+.full-width {
+  width: 100%;
+}
+
+//.gallery {
+//  .gallery-item {
+//    padding-top: $grid-gutter-width/2;
+//    padding-bottom: $grid-gutter-width/2;
+//  }
+//}
+
+//.vertical-margin-lg {
+//  margin-top: $padding-large-vertical * 2;
+//  margin-bottom: $padding-large-vertical * 2;
+//}
+
+.bg-light-primary {
+  background-color: lighten($brand-primary, 42%);
+}
+
+a.disabled {
+  /* Make the disabled links grayish*/
+  color: gray;
+  /* And disable the pointer events */
+  pointer-events: none;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.centered-h {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.centered-v {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
