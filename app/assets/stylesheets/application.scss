@@ -80,3 +80,27 @@ a {
   font-weight: bold;
   transition: all 0.5s ease-out;
 }
+
+.logo-brand {
+  max-height: 40px;
+  max-width: 300px;
+  @media(max-width: 490px) {
+    max-width: 30vw;
+  }
+  @media(max-width: 768px) {
+    max-width: 40vw;
+  }
+}
+
+.svg-link {
+  tspan {
+    transition: all 0.5s ease-out;
+    fill: $navbar-default-link-color !important;
+  }
+
+  &:hover {
+    tspan {
+      fill: $navbar-default-link-hover-color !important;
+    }
+  }
+}

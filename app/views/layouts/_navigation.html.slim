@@ -5,9 +5,9 @@ nav.navbar.navbar-default
               data-target='#main-navbar' aria-expanded='false' )
         = fa_icon 'bars'
       = link_to root_path, class: 'navbar-brand brand-image' do
-        = image_tag 'brand/logo-thin.svg', height: '40'
-      = link_to root_path, class: 'navbar-brand' do
-        ' StudioBAKO
+        = render 'layouts/logo-brand.svg'
+      /= link_to root_path, class: 'navbar-brand' do
+      /  ' StudioBAKO
 
     #main-navbar.collapse.navbar-collapse
       ul.nav.navbar-nav
